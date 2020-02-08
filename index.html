@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Gift Card 1.0</title>
+<style>
+<link rel ="stylesheet " href ="https: //stackpath.bootstrapcdn.com
+	/bootstrap/4.4.1 /css/bootstrap.min.css " integrity
+	 ="sha384-Vkoo8x4CGsO3+Hhxv8T
+	/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin ="anonymous
+	 "> < link rel ="stylesheet " href ="https: //www.w3schools.com
+	/w3css/4/w3.css
+	 ">body {
+	/* background-image: url('img/bkg.jpg'); */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-left: 15px;
+	padding-top: 10px;
+	width: 97%;
+}
+
+table, th, td { /* border: 1px solid black; */
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+.sidenav {
+	height: 100%;
+	width: 160px;
+	position: absolute;
+	z-index: 1;
+	top: 5;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 10px;
+	padding-bottom: 100px;
+	padding-right: 15px;
+	margin-left: 15px;
+}
+
+.sidenav
+ 
+a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #818181;
+	display: block;
+}
+
+.sidenav
+ 
+a
+:hover {
+	color: #f1f1f1;
+}
+
+.main {
+	margin-left: 250px; /* Same as the width of the sidenav */
+	font-size: 28px; /* Increased text to enable scrolling */
+	padding: 0px 20px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+table, th, td {
+	/* border: 1px solid black; */
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+.sidenav {
+	height: 100%;
+	width: 160px;
+	position: absolute;
+	z-index: 1;
+	top: 5;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 10px;
+	padding-bottom: 100px;
+	padding-right: 15px;
+	margin-left: 15px;
+}
+
+.sidenav a {
+	padding: 60px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #818181;
+	display: block;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.main {
+	margin-left: 160px; /* Same as the width of the sidenav */
+	font-size: 14px; /* Increased text to enable scrolling */
+	padding: 0px 20px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav
+ 
+a {
+		font-size: 18px;
+	}
+}
+
+.mySlides {
+	display: none;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<table style="width: 80%">
+		<tr>
+			<th><!-- <img src="logo.png" alt="Avatar" style="width:200px;"> -->
+			<img src="resources/img/mainLogo.png" oncontextmenu="hi"
+				style="border-radius: 50%;width: 230px; height: 120px"></th>
+			<th colspan="2">
+				<p
+					style="font-family: Brush Script MT; font-size: 180%; color: tomato;">Gift
+					Card Shop</p>
+			</th>
+		</tr>
+	</table>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Chilu's Gift Store</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+
+				<!-- 	<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Page 1-1</a></li>
+						<li><a href="#">Page 1-2</a></li>
+						<li><a href="#">Page 1-3</a></li>
+					</ul></li> -->
+
+				<li><a href="placeorder.html">Place Gift Card Order</a></li>
+				<li><a href="vieworder.html">View Gift Card Orders</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="contact.html"><span
+						class="glyphicon glyphicon-phone"></span> Contact Us</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="sidenav">
+		<a href="index.html">Home</a> <a href="placeorder.html">Place Gift
+			Card Order</a> <a href="vieworder.html">View Gift Card Orders</a> <a
+			href="contact.html">Contact</a>
+	</div>
+
+
+<!-- 
+	<div class="main" align="center" >
+
+		<div class="w3-content w3-section" style="max-width: 500px">
+			<img class="mySlides" src="resources/img/automatic.png"
+				style="width: 70%"> <img class="mySlides"
+				src="resources/img/automatic3.png" style="width: 70%"> <img
+				class="mySlides" src="resources/img/automatic6.png"
+				style="width: 70%"> <img class="mySlides"
+				src="resources/img/automatic9.png" style="width: 70%"> <img
+				class="mySlides" src="resources/img/automatic10.png"
+				style="width: 70%">
+		</div>
+
+		<script class="main">
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				myIndex++;
+				if (myIndex > x.length) {
+					myIndex = 1
+				}
+				x[myIndex - 1].style.display = "block";
+				setTimeout(carousel, 2000); // Change image every 2 seconds
+			}
+		</script> -->
+
+	<div class="main" align="center" >
+		<h2 style="font-family: chiller; font-size: 33px"><u><b>Gift Card</b></u></h2>
+		<p  style="max-width: 1000px">At Gift card 1.0,we understand what gifting
+			entails, and how through the things you gift others, you are also
+			taking a step towards strengthening your bond – of love, and trust -
+			with them.Therefore,our attempt is to make your experience at our
+			store should be unique. We are providing gifts with an extensive
+			collection of both ethnic and modern,contemporary gift cards for any
+			occassion you think of. We have made it easy for you to buy gift
+			cards by selecting online with timely delivery,including an option of
+			cash on delivery and with safe delivery.We are also prviding free
+			shipping on most of the gift cards,online gift shopping become
+			delightful and stress-free all online shoppers at Gift Card 1.0.</p>
+		<br>
+
+		<p  style="max-width: 1000px">We are providing cards not only for specific
+			occassions like FriendshipDay, Valentine's Day but also for different
+			personalities like women who are “thoughtful and creative” to perfect
+			“hostess(es),” to men who are “stylish” and “romantic,” girls who are
+			the “princess” or “wild” kinds, and teen boys who are the “coolest
+			dudes” or are techno-wizards.</p>
+		<br>
+		<p  style="max-width: 1000px">We are also providing the customised and
+			personalised gift cards based on the occations with gift hampers if
+			needed.</p>
+
+		<br>
+		<p  style="max-width: 1000px;font-family: sans;font-size: 18px">Button kottu... Gift Pattu</p>
+		<br><br>
+		<form id="form-1" action="placeorder.html">
+		
+		<button style="background-color: #4CAF50;border: none;color: white;text-align: center;text-decoration: none;display: inline-block; font-size: 30px;margin: 4px 2px;padding: 32px 44px">Place Order</button>
+				<!-- <input type="submit" value="Place Order" id="placeOrder"
+			style="width: 100px; height: 35px; font-size: 14px;" /> -->
+		</form>
+	</div>
+
+
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+<
+link rel ="stylesheet " href ="https: //www.w3schools.com /w3css/4/w3.css
+	 ">
+	 body {
+	/* background-image: url('img/bkg.jpg'); */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-left: 15px;
+	padding-top: 10px;
+	width: 97%;
+}
+   
+table, th, td { /* border: 1px solid black; */
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+.sidenav {
+	height: 100%;
+	width: 160px;
+	position: absolute;
+	z-index: 1;
+	top: 5;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 10px;
+	padding-bottom: 100px;
+	padding-right: 15px;
+	margin-left: 15px;
+}
+
+.sidenav
+ 
+a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #818181;
+	display: block;
+}
+
+.sidenav
+ 
+a
+:hover {
+	color: #f1f1f1;
+}
+
+.main {
+	margin-left: 160px; /* Same as the width of the sidenav */
+	font-size: 14px; /* Increased text to enable scrolling */
+	padding: 0px 20px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+table, th, td {
+	/* border: 1px solid black; */
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+.sidenav {
+	height: 100%;
+	width: 160px;
+	position: absolute;
+	z-index: 1;
+	top: 5;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 10px;
+	padding-bottom: 100px;
+	padding-right: 15px;
+	margin-left: 15px;
+}
+
+.sidenav a {
+	padding: 60px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #818181;
+	display: block;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.main {
+	margin-left: 160px; /* Same as the width of the sidenav */
+	font-size: 14px; /* Increased text to enable scrolling */
+	padding: 0px 20px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav
+ 
+a {
+		font-size: 18px;
+	}
+}
+
+.mySlides {
+	display: none;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="alternate" type="application/json+oembed"
+	href="https://www.jotform.com/oembed/?format=json&amp;url=https%3A%2F%2Fform.jotform.com%2F200371983600450"
+	title="oEmbed Form">
+<link rel="alternate" type="text/xml+oembed"
+	href="https://www.jotform.com/oembed/?format=xml&amp;url=https%3A%2F%2Fform.jotform.com%2F200371983600450"
+	title="oEmbed Form">
+<meta property="og:title" content="Product Order Form">
+<meta property="og:url"
+	content="https://form.jotform.com/200371983600450">
+<meta property="og:description"
+	content="Please click the link to complete this form.">
+<meta name="slack-app-id" content="AHNMASS8M">
+<link rel="shortcut icon" href="https://cdn.jotfor.ms/favicon.ico">
+<link rel="canonical" href="https://form.jotform.com/200371983600450" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
+<meta name="HandheldFriendly" content="true" />
+<title>Gift Order</title>
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.15279"
+	rel="stylesheet" type="text/css" />
+<link type="text/css" media="print" rel="stylesheet"
+	href="https://cdn.jotfor.ms/css/printForm.css?3.3.15279" />
+<link type="text/css" rel="stylesheet"
+	href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.15279" />
+<link type="text/css" rel="stylesheet"
+	href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?themeRevisionID=5dca5ac9a5e86d17235d90c1" />
+<style type="text/css">
+.form-label-left {
+	width: 150px;
+}
+
+.form-line {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.form-label-right {
+	width: 150px;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+
+.form-all {
+	margin: 0px auto;
+	padding-top: 0px;
+	width: 690px;
+	color: #555 !important;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+		Verdana, sans-serif;
+	font-size: 14px;
+}
+
+.form-radio-item label, .form-checkbox-item label, .form-grading-label,
+	.form-header {
+	color: false;
+}
+</style>
+
+<style type="text/css" id="form-designer-style">
+/* Injected CSS Code */
+/*PREFERENCES STYLE*/
+.form-all {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana,
+		Tahoma, sans-serif, sans-serif;
+}
+
+.form-all .qq-upload-button, .form-all .form-submit-button, .form-all .form-submit-reset,
+	.form-all .form-submit-print {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana,
+		Tahoma, sans-serif, sans-serif;
+}
+
+.form-all .form-pagebreak-back-container, .form-all .form-pagebreak-next-container
+	{
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana,
+		Tahoma, sans-serif, sans-serif;
+}
+
+.form-header-group {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana,
+		Tahoma, sans-serif, sans-serif;
+}
+
+.form-label {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana,
+		Tahoma, sans-serif, sans-serif;
+}
+
+.form-label.form-label-auto {
+	display: inline-block;
+	float: left;
+	text-align: left;
+}
+
+.form-line {
+	margin-top: 12px 36px 12px 36px px;
+	margin-bottom: 12px 36px 12px 36px px;
+}
+
+.form-all {
+	width: 590px;
+}
+
+.form-label-left, .form-label-right, .form-label-left.form-label-auto,
+	.form-label-right.form-label-auto {
+	width: 150px;
+}
+
+.form-all {
+	font-size: 14pxpx
+}
+
+.form-all .qq-upload-button, .form-all .qq-upload-button, .form-all .form-submit-button,
+	.form-all .form-submit-reset, .form-all .form-submit-print {
+	font-size: 14pxpx
+}
+
+.form-all .form-pagebreak-back-container, .form-all .form-pagebreak-next-container
+	{
+	font-size: 14pxpx
+}
+
+.supernova .form-all, .form-all {
+	background-color:;
+	border: 1px solid transparent;
+}
+
+.form-all {
+	color: #555;
+}
+
+.form-header-group .form-header {
+	color: #555;
+}
+
+.form-header-group .form-subHeader {
+	color: #555;
+}
+
+.form-label-top, .form-label-left, .form-label-right, .form-html,
+	.form-checkbox-item label, .form-radio-item label {
+	color: #555;
+}
+
+.form-sub-label {
+	color: #6f6f6f;
+}
+
+.supernova {
+	background-color: undefined;
+}
+
+.supernova body {
+	background: transparent;
+}
+
+.form-textbox, .form-textarea, .form-radio-other-input,
+	.form-checkbox-other-input, .form-captcha input, .form-spinner input {
+	background-color: undefined;
+}
+
+.supernova {
+	background-image: none;
+}
+
+#stage {
+	background-image: none;
+}
+
+.form-all {
+	background-image: none;
+}
+
+.ie-8 .form-all:before {
+	display: none;
+}
+
+.ie-8 {
+	margin-top: auto;
+	margin-top: initial;
+}
+
+/*PREFERENCES STYLE*/ /*__INSPECT_SEPERATOR__*/
+/* Injected CSS Code */
+</style>
+</head>
+<body>
+<body>
+
+	<table style="width: 80%">
+		<tr>
+			<th><img src="resources/img/mainLogo.png" oncontextmenu="hi"
+				style="border-radius:50%; width: 230px; height: 120px"></th>
+			<th colspan="2">
+				<p
+					style="font-family: Brush Script MT; font-size: 180%; color: tomato;">Gift
+					Card Shop</p>
+			</th>
+		</tr>
+	</table>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Chilu's Gift Store</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+
+				<!-- 	<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Page 1-1</a></li>
+						<li><a href="#">Page 1-2</a></li>
+						<li><a href="#">Page 1-3</a></li>
+					</ul></li> -->
+
+				<li><a href="placeorder.html">Place Gift Card Order</a></li>
+				<li><a href="vieworder.html">View Gift Card Orders</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+
+				<li><a href="contact.html"><span
+						class="glyphicon glyphicon-phone"></span> Contact Us</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="sidenav">
+		<a href="index.html">Home</a> <a href="placeorder.html">Place Gift
+			Card Order</a> <a href="vieworder.html">View Gift Card Orders</a> <a
+			href="contact.html">Contact</a>
+	</div>
+
+
+	<form class="form-form" action="vieworder.html"
+		onsubmit="return addItemFormSubmit()" name="form_200371983600450"
+		id="200371983600450" accept-charset="utf-8" autocomplete="on">
+		<input type="hidden" name="formID" value="200371983600450" /> <input
+			type="hidden" id="JWTContainer" value="" /> <input type="hidden"
+			id="cardinalOrderNumber" value="" />
+		<div role="main" class="form-all">
+			<ul class="form-section page-section">
+				<li id="cid_22" class="form-input-wide" data-type="control_head">
+					<div class="form-header-group ">
+						<div class="header-text httal htvam">
+							<h2 id="header_22" class="form-header" data-component="header">
+								Gift Order</h2>
+						</div>
+					</div>
+				</li>
+				<li class="form-line" data-type="control_fullname" id="id_1"><label
+					class="form-label form-label-left form-label-auto" id="label_1"
+					for="prefix_1"> Gift Card Amount : </label>
+					<div id="cid_1" class="form-input">
+						<div data-wrapper-react="true">
+
+							<span class="form-sub-label-container "
+								style="vertical-align: top"> <input type="text"
+								id="prefix_1" name="rupees" class="form-textbox validate[required]" size="6"
+								value="" data-component="prefix"
+								aria-labelledby="label_1 sublabel_1_prefix" /> <span
+								class="phone-separate" aria-hidden="true"> : </span> <label
+								class="form-sub-label" for="prefix_1" id="rupee"
+								style="min-height: 13px" aria-hidden="false"> INR </label>
+							</span> <span class="form-sub-label-container "
+								style="vertical-align: top"> <input type="text"
+								id="first_1" name="paisa" class="form-textbox validate[required]" size="10"
+								value="" data-component="first"
+								aria-labelledby="label_1 sublabel_1_first" /> <label
+								class="form-sub-label" for="first_1" id="paisa"
+								style="min-height: 13px" aria-hidden="false">Paisa </label>
+							</span>
+
+						</div>
+					</div></li>
+				<li class="form-line" data-type="control_textbox" id="id_19"><label
+					class="form-label form-label-left form-label-auto" id="label_19"
+					for="input_19"> Receipent Name : </label>
+					<div id="cid_19" class="form-input">
+						<div data-wrapper-react="true">
+							<span class="form-sub-label-container "
+								style="vertical-align: top"> <input type="text"
+								id="prefix_1" name="firstName" class="form-textbox validate[required]" size="21"
+								value="" data-component="prefix"
+								aria-labelledby="label_1 sublabel_1_prefix" /> <label
+								class="form-sub-label" for="prefix_1" id="sublabel_1_prefix"
+								style="min-height: 13px" aria-hidden="false"> FirstName
+							</label>
+							</span> <span class="form-sub-label-container "
+								style="vertical-align: top"> <input type="text"
+								id="first_1" name="lastName" class="form-textbox validate[required]" size="21"
+								value="" data-component="first"
+								aria-labelledby="label_1 sublabel_1_first" /> <label
+								class="form-sub-label" for="first_1" id="sublabel_1_first"
+								style="min-height: 13px" aria-hidden="false">LastName</label>
+							</span>
+
+						</div>
+					</div></li>
+
+				<li class="form-line" data-type="control_address" id="id_4"><label
+					class="form-label form-label-left form-label-auto" id="label_4"
+					for="input_4undefined"> Shipping Address </label>
+					<div id="cid_4" class="form-input">
+						<table summary="" class="form-address-table">
+							<tbody>
+								<tr>
+									<td colSpan="2"><span class="form-sub-label-container "
+										style="vertical-align: top"> <input type="text"
+											id="input_4_addr_line1" name="address"
+											class="form-textbox validate[required] form-address-line" value=""
+											data-component="address_line_1"
+											aria-labelledby="label_4 sublabel_4_addr_line1" size="21" />
+											<label class="form-sub-label" for="input_4_addr_line1"
+											id="address" style="min-height: 13px" aria-hidden="false">
+												Street Address </label>
+									</span></td>
+								</tr>
+
+								</tr>
+								<tr>
+									<td><span class="form-sub-label-container "
+										style="vertical-align: top"> <input type="text"
+											id="input_4_city" name="city"
+											class="form-textbox validate[required] form-address-city" size="21" value=""
+											data-component="city"
+											aria-labelledby="label_4 sublabel_4_city" /> <label
+											class="form-sub-label" for="input_4_city" id="city"
+											style="min-height: 13px" aria-hidden="false"> City </label>
+									</span></td>
+									<td><span class="form-sub-label-container "
+										style="vertical-align: top"> <input type="text"
+											id="input_4_state" name="state"
+											class="form-textbox validate[required] form-address-state" size="22" value=""
+											data-component="state"
+											aria-labelledby="label_4 sublabel_4_state" /> <label
+											class="form-sub-label" for="input_4_state" id="state"
+											style="min-height: 13px" aria-hidden="false"> State </label>
+									</span></td>
+								</tr>
+								<tr>
+
+									<td><span class="form-sub-label-container "
+										style="vertical-align: top"> <select
+											class="form-dropdown form-address-country noTranslate"
+											name="country" id="country" data-component="country"
+											aria-labelledby="label_4 sublabel_4_country">
+												<option value="">Please Select</option>
+												<option value="United States">United States</option>
+												<option value="Afghanistan">Afghanistan</option>
+												<option value="Albania">Albania</option>
+												<option value="Algeria">Algeria</option>
+												<option value="American Samoa">American Samoa</option>
+												<option value="Andorra">Andorra</option>
+												<option value="Angola">Angola</option>
+
+												<option value="Australia">Australia</option>
+												<option value="Austria">Austria</option>
+												<option value="India">India</option>
+
+												<option value="Bermuda">Bermuda</option>
+												<option value="Bhutan">Bhutan</option>
+												<option value="Bolivia">Bolivia</option>
+												<option value="Bosnia and Herzegovina">Bosnia and
+													Herzegovina</option>
+												<option value="Botswana">Botswana</option>
+
+												<option value="British Virgin Islands">British
+													Virgin Islands</option>
+												<option value="Isle of Man">Isle of Man</option>
+												<option value="US Virgin Islands">US Virgin Islands
+												</option>
+												<option value="Wallis and Futuna">Wallis and Futuna
+												</option>
+												<option value="Western Sahara">Western Sahara</option>
+												<option value="Yemen">Yemen</option>
+												<option value="Zambia">Zambia</option>
+												<option value="Zimbabwe">Zimbabwe</option>
+												<option value="other">Other</option>
+										</select> <label class="form-sub-label" for="input_4_country"
+											id="sublabel_4_country" style="min-height: 13px"="false">
+												Country </label>
+									</span></td>
+									<td><span class="form-sub-label-container "
+										style="vertical-align: top"> <input type="text"
+											id="input_4_postal" name="postal"
+											class="form-textbox validate[required] form-address-postal" size="10" min="6"
+											maxlength="6" data-component="zip"
+											aria-labelledby="label_4 sublabel_4_postal" /> <label
+											class="form-sub-label" for="input_4_postal"
+											id="sublabel_4_postal" style="min-height: 13px"
+											aria-hidden="false"> Postal / Zip Code </label>
+									</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div></li>
+				<li class="form-line" data-type="control_textbox" id="id_19"><label
+					class="form-label form-label-left form-label-auto" id="label_19"
+					for="input_19"> Buyer's Name :</label>
+					<div id="cid_19" class="form-input">
+						<div data-wrapper-react="true">
+							<span class="form-sub-label-container "
+								style="vertical-align: top"> <input type="text"
+								id="prefix_1" name="bfirstName" class="form-textbox validate[required]" size="21"
+								value="" data-component="prefix"
+								aria-labelledby="label_1 sublabel_1_prefix" /> <label
+								class="form-sub-label" for="prefix_1" id="bfirstName"
+								style="min-height: 13px" aria-hidden="false"> FirstName
+							</label>
+							</span> <span class="form-sub-label-container "
+								style="vertical-align: top"> <input type="text"
+								id="first_1" name="blastName" class="form-textbox validate[required]" size="21"
+								value="" data-component="first"
+								aria-labelledby="label_1 sublabel_1_first" /> <label
+								class="form-sub-label" for="first_1" id="blastName"
+								style="min-height: 13px" aria-hidden="false">LastName</label>
+							</span>
+
+						</div>
+					</div></li>
+
+				<li class="form-line" data-type="control_phone" id="id_5"><label
+					class="form-label form-label-left form-label-auto" id="label_5"
+					for="input_5_area"> Phone Number :</label>
+					<div id="cid_19" class="form-input">
+						<div data-wrapper-react="true">
+							<span class="form-sub-label-container "
+								style="vertical-align: top"> <input type="tel"
+								id="input_5_area" name="q5_phoneNumber5[area]"
+								class="form-textbox" size="3" value="+91"
+								data-component="areaCode"
+								aria-labelledby="label_5 sublabel_5_area" /> <span
+								class="phone-separate" aria-hidden="true"> - </span>
+
+
+							</span> <span class="form-sub-label-container "
+								style="vertical-align: top"> <!-- <input type="tel"
+								id="input_5_phone" name="phone" class="form-textbox" size="12"
+								min="10" maxlength="10" data-component="phone"
+								aria-labelledby="label_5 sublabel_5_phone" /> -->
+
+								<div class="cont">
+									<input type="tel" id="p1" name="q5_phoneNumber5[phone]"
+										class="form-textbox" style="width: 25px;" maxlength="1"
+										value="" data-component="phone"
+										aria-labelledby="label_5 sublabel_5_phone" /> <input
+										type="tel" id="p2" name="q5_phoneNumber5[phone]"
+										class="form-textbox" style="width: 25px;" maxlength="1"
+										value="" data-component="phone"
+										aria-labelledby="label_5 sublabel_5_phone" /> <input
+										type="tel" id="p3" name="q5_phoneNumber5[phone]"
+										class="form-textbox" style="width: 25px;" maxlength="1"
+										value="" data-component="phone"
+										aria-labelledby="label_5 sublabel_5_phone" /> <input
+										type="tel" id="p4" name="q5_phoneNumber5[phone]"
+										class="form-textbox" style="width: 25px;" maxlength="1"
+										value="" data-component="phone"
+										aria-labelledby="label_5 sublabel_5_phone" /> <input
+										type="tel" id="p5" name="q5_phoneNumber5[phone]"
+										class="form-textbox" style="width: 25px;" maxlength="1"
+										value="" data-component="phone"
+										aria-labelledby="label_5 sublabel_5_phone" /> <input
+										type="tel" id="p6" name="q5_phoneNumber5[phone]"
+										class="form-textbox" style="width: 25px;" maxlength="1"
+										value="" data-component="phone"
+										aria-labelledby="label_5 sublabel_5_phone" /> <input
+										type="tel" id="p7" name="q5_phoneNumber5[phone]"
+										class="form-textbox" style="width: 25px;" maxlength="1"
+										value="" data-component="phone"
+										aria-labelledby="label_5 sublabel_5_phone" /> <input
+										type="tel" id="p8" name="q5_phoneNumber5[phone]"
+										class="form-textbox" style="width: 25px;" maxlength="1"
+										value="" data-component="phone"
+										aria-labelledby="label_5 sublabel_5_phone" /> <input
+										type="tel" id="p9" name="q5_phoneNumber5[phone]"
+										class="form-textbox" style="width: 25px;" maxlength="1"
+										value="" data-component="phone"
+										aria-labelledby="label_5 sublabel_5_phone" /> <input
+										type="tel" id="p10" name="q5_phoneNumber5[phone]"
+										class="form-textbox" style="width: 25px;" maxlength="1"
+										value="" data-component="phone"
+										aria-labelledby="label_5 sublabel_5_phone" />
+								</div> <script type="text/javascript">  var cont = document.getElementsByClassName("cont")[0];
+                  cont.onkeyup = function(e) {
+                	    var target = e.srcElement;
+                	    var maxLength = parseInt(target.attributes["maxlength"].value, 10);
+                	    var myLength = target.value.length;
+                	    if (myLength >= maxLength) {
+                	        var next = target;
+                	        while (next = next.nextElementSibling) {
+                	            if (next == null)
+                	                break;
+                	            if (next.tagName.toLowerCase() == "input") {
+                	                next.focus();
+                	                break;
+                	            }
+                	        }
+                	    }
+                	}</script> <label class="form-sub-label" for="input_5_phone"
+								id="sublabel_5_phone" style="min-height: 13px"
+								aria-hidden="false"> Phone Number </label>
+							</span>
+						</div>
+					</div></li>
+				
+
+				<li class="form-line" data-type="control_email" id="id_3"><label
+					class="form-label form-label-left form-label-auto" id="label_3"
+					for="input_3"> E-mail : </label>
+					<div id="cid_3" class="form-input">
+						<input type="email" id="input_3" name="email"
+							class="form-textbox validate[required, Email]" size="30" value=""
+							placeholder="" data-component="email" aria-labelledby="label_3" />
+					</div></li>
+				<li class="form-line" data-type="control_button" id="id_18">
+					<div id="cid_18" class="form-input-wide">
+						<div style="margin-left: 156px" class="form-buttons-wrapper ">
+							<button id="input_18" type="submit"
+								class="form-submit-button form-submit-button-none"
+								data-component="button" data-content="">Place Order</button>
+						</div>
+					</div>
+				</li>
+				<li style="display: none">Should be Empty: <input type="text"
+					name="website" value="" />
+				</li>
+			</ul>
+		</div>
+
+
+	</form>
+
+
+	<!--  <form action="vieworder.html" onSubmit="return addItemFormSubmit()" method="post" accept-charset="utf-8" >
+            <div role="main" class="form-all">
+            <ul class="form-section page-section">
+              <li id="cid_5" class="form-input-wide" data-type="control_head">
+                <div class="form-header-group ">
+                  <div class="header-text httal htvam">
+                    <h2 id="header_5" class="form-header" data-component="header">
+                      Place your Order here
+                    </h2>
+                  </div>
+                </div>
+              </li>
+
+              <li class="form-line jf-required" data-type="control_phone" id="id_191">
+                <label class="form-label form-label-left form-label-auto" id="label_19" for="input_19_area">
+                  Amount
+                  <span class="form-required">
+                    *
+                  </span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                  <div data-wrapper-react="true">
+                    <span class="form-sub-label-container " style="vertical-align:top">
+input: Rs                    
+                      <input type="text" id="input_RS" name="q19_phoneNumber19[area]" class="form-textbox validate[required]" onkeypress="return isNumeric(event)" size="8" value="" data-component="areaCode" aria-labelledby="label_19 sublabel_19_area" required="" />
+                      <span class="phone-separate" aria-hidden="true">
+                        .
+                      </span>
+                      <label class="form-sub-label" for="input_19_area" id="sublabel_19_area" style="min-height:13px" aria-hidden="false"> Rs </label>
+                    </span>
+                    <span class="form-sub-label-container " style="vertical-align:top">
+input: Paisa                   
+                      <input type="text" id="input_Paisa"  name="q2_paisaNumber2[paisa]" class="form-textbox validate[required]" onkeypress="return isNumeric(event)" size="2" value="" data-component="phone" aria-labelledby="label_19 sublabel_19_phone" required=""  maxlength="2"/>
+                      <label class="form-sub-label" for="input_19_phone" id="sublabel_19_phone" style="min-height:13px" aria-hidden="false"> Paisa </label>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+
+              <li class="form-line jf-required" data-type="control_fullname" id="id_20">
+                <label class="form-label form-label-left form-label-auto" id="label_20" for="first_20">
+                  Full Name
+
+                </label>
+                <div id="cid_20" class="form-input jf-required">
+                  <div data-wrapper-react="true">
+                    <span class="form-sub-label-container " style="vertical-align:top">
+input: First name                    
+                      <input type="text" id="first_20"  class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_20 sublabel_20_first" required="" />
+                      <label class="form-sub-label" for="first_20" id="sublabel_20_first" style="min-height:13px" aria-hidden="false"> First Name </label>
+                    </span>
+                    <span class="form-sub-label-container " style="vertical-align:top">
+input: Last name                    
+                      <input type="text" id="last_20" name="q20_fullName20[last]" class="form-textbox validate[required]" size="15" value="" data-component="last" aria-labelledby="label_20 sublabel_20_last" required="" />
+                      <label class="form-sub-label" for="last_20" id="sublabel_20_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="form-line jf-required" data-type="control_phone" id="id_19">
+                <label class="form-label form-label-left form-label-auto" id="label_19" for="input_19_area">
+                  Phone Number
+                  <span class="form-required">
+                    *
+                  </span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                  <div data-wrapper-react="true">
+                    <span class="form-sub-label-container " style="vertical-align:top">
+input: Phone no                    
+                      <input type="tel" id="input_19_area" onkeypress="return isNumeric(event)" class="form-textbox validate[required]" size="6" value="" data-component="areaCode" aria-labelledby="label_19 sublabel_19_area" required="" maxlength="3"/>
+                       <input name="myInput_DRS" id="input_19_area"   type = "number" placeholder="Type..." min = "1" max = "3" />
+                        <span class="phone-separate" aria-hidden="true">
+                        -
+                      </span>
+                      <label class="form-sub-label" for="input_19_area" id="sublabel_19_area" style="min-height:13px" aria-hidden="false"> Area Code </label>
+                    </span>
+                    <span class="form-sub-label-container " style="vertical-align:top">
+input: Phone no                     
+                          <input type="tel" id="input_19_phone"  onkeypress="return isNumeric(event)" class="form-textbox validate[required]" size="12" value="" data-component="phone" aria-labelledby="label_19 sublabel_19_phone" required="" maxlength="7"/>
+                   <input name="myInput_DRS1" id="input_19_phone" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" type = "number" placeholder="Type..." min = "1" max = "7" />
+
+                        <label class="form-sub-label" for="input_19_phone" id="sublabel_19_phone" style="min-height:13px" aria-hidden="false"> Phone Number </label>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="form-line jf-required" data-type="control_email" id="id_23">
+                <label class="form-label form-label-left form-label-auto" id="label_23" for="input_23">
+                  E-mail
+                  <span class="form-required">
+                    *
+                  </span>
+                </label>
+                <div id="cid_23" class="form-input jf-required">
+input: email                 
+                  <input type="email" id="EmaiL" name="q23_email23" class="form-textbox validate[required, Email]" size="30" value="" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_23" required="" />
+                </div>
+              </li>
+
+              <li class="form-line jf-required" data-type="control_address" id="id_21">
+
+                <label class="form-label form-label-left form-label-auto" id="label_21" for="input_21undefined">
+                  Delivery Address
+                  <span class="form-required">
+                    *
+                  </span>
+                </label>
+                <div id="cid_21" class="form-input jf-required">
+                  <table summary="" class="form-address-table">
+                    <tbody>
+                      <tr>
+                        <td colSpan="2">
+                          <span class="form-sub-label-container " style="vertical-align:top">
+                            <input type="text" id="input_21_addr_line1" name="q21_deliveryAddress[addr_line1]" class="form-textbox validate[required] form-address-line" value="" data-component="address_line_1" aria-labelledby="label_21 sublabel_21_addr_line1" required="" />
+                            <label class="form-sub-label" for="input_21_addr_line1" id="sublabel_21_addr_line1" style="min-height:13px" aria-hidden="false"> Street Address </label>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colSpan="2">
+                          <span class="form-sub-label-container " style="vertical-align:top">
+input: Address1                           
+                            <input type="text" id="input_21_addr_line2" name="q21_deliveryAddress[addr_line2]" class="form-textbox form-address-line" size="46" value="" data-component="address_line_2" aria-labelledby="label_21 sublabel_21_addr_line2" required="" />
+                            <label class="form-sub-label" for="input_21_addr_line2" id="sublabel_21_addr_line2" style="min-height:13px" aria-hidden="false"> Street Address Line 2 </label>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="form-sub-label-container " style="vertical-align:top">
+input: Country                           
+                                 Select Country: <select name="state" id="countySel" size="1">
+                                <option value="" selected="selected">Select Country</option>
+                                </select>
+                                <label class="form-sub-label" for="input_21_country" id="sublabel_21_Country" style="min-height:13px" aria-hidden="false"> Country </label>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="form-sub-label-container " style="vertical-align:top">
+input: State                           
+                            Select State: <select name="countrya" id="stateSel" size="1">
+                                <option value="" selected="selected">Please select Country first</option>
+                                </select>
+
+                          <label class="form-sub-label" for="input_21_state" id="sublabel_21_state" style="min-height:13px" aria-hidden="false"> State / Province </label>
+                          </span>
+                        </td>
+
+
+                      </tr>
+
+                      <td>
+                          <span class="form-sub-label-container " style="vertical-align:top">
+                                <br>
+                                <br>
+input: District                             
+                                Select District: <select name="district" id="districtSel" size="1">
+                                <option value="" selected="selected">Please select State first</option>
+                                </select><br>
+                                <label class="form-sub-label" for="input_21_city" id="sublabel_21_city" style="min-height:13px" aria-hidden="false"> District</label>
+
+                          </span>
+                      </td>
+
+                      <tr>
+                        <td>
+                          <span class="form-sub-label-container " style="vertical-align:top">
+input: Pincode                             
+                            <input type="text" id="input_21_postal" name="q21_deliveryAddress[postal]" class="form-textbox form-address-postal" onkeypress="return isNumeric(event)" size="10" value="" data-component="zip" aria-labelledby="label_21 sublabel_21_postal" required="" maxlength="6"/>
+                            <label class="form-sub-label" for="input_21_postal" id="sublabel_21_postal" style="min-height:13px" aria-hidden="false"> Postal / Zip Code </label>
+                          </span>
+                        </td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </li>
+              <li id="cid_25" class="form-input-wide" data-type="control_pagebreak">
+                <div class="form-pagebreak" data-component="pagebreak">
+                  <div class="form-pagebreak-back-container">
+                    <button id="form-pagebreak-back_25" type="button" class="form-pagebreak-back " data-component="pagebreak-back">
+                      Back
+                    </button>
+                  </div>
+                  <div class="form-pagebreak-next-container">
+                    <button id="form-pagebreak-next_25" type="button" class="form-pagebreak-next " data-component="pagebreak-next">
+                      Next
+                    </button>
+                  </div>
+                  <div style="clear:both" class="pageInfo form-sub-label" id="pageInfo_25">
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="form-section page-section" style="display:none;">
+              <li class="form-line jf-required" data-type="control_fullname" id="id_24">
+                <label class="form-label form-label-top" id="label_24" for="first_24">
+                  Order
+                  <span class="form-required">
+                    *
+                  </span>
+                </label>
+                <div id="cid_24" class="form-input-wide jf-required">
+                  <div data-wrapper-react="true">
+                    <span class="form-sub-label-container " style="vertical-align:top">
+                      <input type="text" id="first_24" name="q24_order[first]" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_24 sublabel_24_first" required="" />
+                      <label class="form-sub-label" for="first_24" id="sublabel_24_first" style="min-height:13px" aria-hidden="false"> Product # </label>
+                    </span>
+                    <span class="form-sub-label-container " style="vertical-align:top">
+                      <input type="text" id="last_24" name="q24_order[last]" class="form-textbox validate[required]" size="15" value="" data-component="last" aria-labelledby="label_24 sublabel_24_last" required="" />
+                      <label class="form-sub-label" for="last_24" id="sublabel_24_last" style="min-height:13px" aria-hidden="false"> Product Name </label>
+                    </span>
+                    <span class="form-sub-label-container " style="vertical-align:top">
+                      <input type="text" id="Quantity_24" name="q24_order[suffix]" class="form-textbox" size="4" value="" data-component="suffix" aria-labelledby="label_24 sublabel_24_suffix" required="" />
+                      <label class="form-sub-label" for="suffix_24" id="sublabel_24_suffix" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="form-line" data-type="control_checkbox" id="id_30">
+                <label class="form-label form-label-left form-label-auto" id="label_30" for="input_30"> More? </label>
+                <div id="cid_30" class="form-input">
+                  <div class="form-single-column" role="group" aria-labelledby="label_30" data-component="checkbox">
+                    <span class="form-checkbox-item" style="clear:left">
+                      <span class="dragger-item">
+                      </span>
+                      <input type="checkbox" class="form-checkbox" id="input_30_0" name="q30_more[]" value="Yes" />
+                      <label id="label_input_30_0" for="input_30_0"> Yes </label>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+
+              <li class="form-line" data-type="control_fullname" id="id_36">
+                <label class="form-label form-label-top" id="label_36" for="first_36"> Order </label>
+                <div id="cid_36" class="form-input-wide">
+                  <div data-wrapper-react="true">
+                    <span class="form-sub-label-container " style="vertical-align:top">
+input:Product id                     
+                      <input type="text" id="first_36" name="q36_order36[first]" class="form-textbox" size="10" value="" data-component="first" aria-labelledby="label_36 sublabel_36_first" />
+                      <label class="form-sub-label" for="first_36" id="sublabel_36_first" style="min-height:13px" aria-hidden="false"> Product # </label>
+                    </span>
+
+                    <span class="form-sub-label-container " style="vertical-align:top">
+input:Product name                     
+                      <input type="text" id="last_36" name="q36_order36[last]" class="form-textbox" size="15" value="" data-component="last" aria-labelledby="label_36 sublabel_36_last" />
+                      <label class="form-sub-label" for="last_36" id="sublabel_36_last" style="min-height:13px" aria-hidden="false"> Product Name </label>
+                    </span>
+
+                      <span class="form-sub-label-container " style="vertical-align:top">
+input: Product Quantity                    
+                      <input type="text" id="suffix_36" name="q36_order36[suffix]" class="form-textbox" size="4" value="" data-component="suffix" aria-labelledby="label_36 sublabel_36_suffix" onkeypress="return isNumeric(event)"
+                             oninput="maxLengthCheck(this)" maxlength="2"  />
+                      <label class="form-sub-label" for="suffix_36" id="sublabel_36_suffix" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+
+              <li class="form-line" data-type="control_button" id="id_2">
+                <div id="cid_2" class="form-input-wide">
+                  <div style="margin-left:156px" class="form-buttons-wrapper ">
+                    <button id="input_2" type="submit" class="form-submit-button form-submit-button-steel" data-component="button" data-content="">
+                      Place Order
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li style="display:none">
+                Should be Empty:
+                <input type="text" name="website" value="" />
+              </li>
+            </ul>
+          </div>
+
+        </form>
+ -->
+</body>
+</html>

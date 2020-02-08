@@ -1,0 +1,481 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<script src="resources/scripts/cartScript.js"></script>
+
+
+<link rel="stylesheet "
+	href="https: //stackpath.bootstrapcdn.com
+	/bootstrap/4.4.1 /css/bootstrap.min.css "
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T
+	/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous
+	 ">
+<style type="text/css">
+<
+link rel ="stylesheet " href ="https: //www.w3schools.com /w3css/4/w3.css 
+	 "> body {
+	/* background-image: url('img/bkg.jpg'); */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-left: 15px;
+	padding-top: 10px;
+	width: 97%;
+}
+
+table, th, td { /* border: 1px solid black; */
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+.sidenav {
+	height: 100%;
+	width: 160px;
+	position: absolute;
+	z-index: 1;
+	top: 5;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 10px;
+	padding-bottom: 100px;
+	padding-right: 15px;
+	margin-left: 15px;
+}
+
+.sidenav
+ 
+a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #818181;
+	display: block;
+}
+
+.sidenav
+ 
+a
+:hover {
+	color: #f1f1f1;
+}
+
+.main {
+	margin-left: 160px; /* Same as the width of the sidenav */
+	font-size: 14px; /* Increased text to enable scrolling */
+	padding: 0px 20px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+table, th, td {
+	/* border: 1px solid black; */
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+.sidenav {
+	height: 100%;
+	width: 160px;
+	position: absolute;
+	z-index: 1;
+	top: 5;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 10px;
+	padding-bottom: 100px;
+	padding-right: 15px;
+	margin-left: 15px;
+}
+
+.sidenav a {
+	padding: 60px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #818181;
+	display: block;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.main {
+	margin-left: 160px; /* Same as the width of the sidenav */
+	font-size: 14px; /* Increased text to enable scrolling */
+	padding: 0px 20px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav
+ 
+a {
+		font-size: 18px;
+	}
+}
+
+.mySlides {
+	display: none;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<title>Order Form</title>
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.15279"
+	rel="stylesheet" type="text/css" />
+<link type="text/css" media="print" rel="stylesheet"
+	href="https://cdn.jotfor.ms/css/printForm.css?3.3.15279" />
+<link type="text/css" rel="stylesheet"
+	href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.15279" />
+<link type="text/css" rel="stylesheet"
+	href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?themeRevisionID=5dca5ac9a5e86d17235d90c1" />
+<style type="text/css">
+.form-label-left {
+	width: 150px;
+}
+
+.form-line {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.form-label-right {
+	width: 150px;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+
+.form-all {
+	margin: 0px auto;
+	padding-top: 0px;
+	width: 690px;
+	color: #555 !important;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+		Verdana, sans-serif;
+	font-size: 14px;
+}
+
+.form-radio-item label, .form-checkbox-item label, .form-grading-label,
+	.form-header {
+	color: false;
+}
+
+input[type=text] {
+	border-radius: 4px
+}
+
+input[type=tel] {
+	border-radius: 4px
+}
+
+input[type=text] {
+	border-radius: 4px
+}
+</style>
+
+<style type="text/css" id="form-designer-style">
+.form-all {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana,
+		Tahoma, sans-serif, sans-serif;
+}
+
+.form-all .qq-upload-button, .form-all .form-submit-button, .form-all .form-submit-reset,
+	.form-all .form-submit-print {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana,
+		Tahoma, sans-serif, sans-serif;
+}
+
+.form-all .form-pagebreak-back-container, .form-all .form-pagebreak-next-container
+	{
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana,
+		Tahoma, sans-serif, sans-serif;
+}
+
+.form-header-group {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana,
+		Tahoma, sans-serif, sans-serif;
+}
+
+.form-label {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana,
+		Tahoma, sans-serif, sans-serif;
+}
+
+.form-label.form-label-auto {
+	display: inline-block;
+	float: left;
+	text-align: left;
+}
+
+.form-line {
+	margin-top: 20px 36px 20px 36px px;
+	margin-bottom: 12px 36px 12px 36px px;
+}
+
+.form-all {
+	width: 650px;
+}
+
+.form-label-left, .form-label-right, .form-label-left.form-label-auto,
+	.form-label-right.form-label-auto {
+	width: 150px;
+}
+
+.form-all {
+	font-size: 14pxpx
+}
+
+.form-all .qq-upload-button, .form-all .qq-upload-button, .form-all .form-submit-button,
+	.form-all .form-submit-reset, .form-all .form-submit-print {
+	font-size: 14pxpx
+}
+
+.form-all .form-pagebreak-back-container, .form-all .form-pagebreak-next-container
+	{
+	font-size: 14pxpx
+}
+
+.supernova .form-all, .form-all {
+	background-color:;
+	border: 1px solid transparent;
+}
+
+.form-all {
+	color: #555;
+}
+
+.form-header-group .form-header {
+	color: #555;
+}
+
+.form-header-group .form-subHeader {
+	color: #555;
+}
+
+.form-label-top, .form-label-left, .form-label-right, .form-html,
+	.form-checkbox-item label, .form-radio-item label {
+	color: #555;
+}
+
+.form-sub-label {
+	color: #6f6f6f;
+}
+
+.supernova {
+	background-color: undefined;
+}
+
+.supernova body {
+	background: transparent;
+}
+
+.form-textbox, .form-textarea, .form-radio-other-input,
+	.form-checkbox-other-input, .form-captcha input, .form-spinner input {
+	background-color: undefined;
+}
+
+.supernova {
+	background-image: none;
+}
+
+#stage {
+	background-image: none;
+}
+
+.form-all {
+	background-image: none;
+}
+</style>
+
+<script>
+          var stateObject =
+                  {
+
+                    "India": { "Delhi": ["new Delhi", "North Delhi"],
+                                "Kerala": ["Thiruvananthapuram", "Palakkad"],
+                                "Goa": ["North Goa", "South Goa"],
+                             },
+                    "Australia": {
+                                "South Australia": ["Dunstan", "Mitchell"],
+                                "Victoria": ["Altona", "Euroa"]
+                                  },
+                     "Canada": {
+                    "           Alberta": ["Acadia", "Bighorn"],
+                                "Columbia": ["Washington", ""]
+                                },
+                    }
+          window.onload = function ()
+          {
+            var countySel = document.getElementById("countySel"),
+            stateSel = document.getElementById("stateSel"),
+            districtSel = document.getElementById("districtSel");
+
+            for (var country in stateObject)
+            {
+              countySel.options[countySel.options.length] = new Option(country, country);
+            }
+
+            countySel.onchange = function ()
+            {
+              stateSel.length = 1; // remove all options bar first
+              districtSel.length = 1; // remove all options bar first
+
+              if (this.selectedIndex < 1) return; // done
+
+                for (var state in stateObject[this.value])
+                {
+                  stateSel.options[stateSel.options.length] = new Option(state, state);
+                }
+            }
+
+            countySel.onchange(); // reset in case page is reloaded
+            stateSel.onchange = function ()
+            {
+              districtSel.length = 1; // remove all options bar first
+              if (this.selectedIndex < 1) return; // done
+              var district = stateObject[countySel.value][this.value];
+              for (var i = 0; i < district.length; i++)
+              {
+                districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
+              }
+            }
+          }
+        </script>
+
+
+
+<script type="text/javascript" src="js/city_state.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+<script src="https://cdn.jotfor.ms/static/prototype.forms.js"
+	type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.15279"
+	type="text/javascript"></script>
+
+<script type="text/javascript">
+           JotForm.setConditions([{"action":{"field":"26","visibility":"Show"},"link":"Any","terms":[{"field":"30","operator":"equals","value":"Yes"}],"type":"field"},{"action":{"field":"49","visibility":"Show"},"link":"Any","terms":[{"field":"30","operator":"equals","value":"Yes"}],"type":"field"},{"action":{"field":"48","visibility":"Show"},"link":"Any","terms":[{"field":"30","operator":"equals","value":"Yes"}],"type":"field"},{"action":{"field":"37","visibility":"Show"},"link":"Any","terms":[{"field":"30","operator":"equals","value":"Yes"}],"type":"field"},{"action":{"field":"36","visibility":"Show"},"link":"Any","terms":[{"field":"30","operator":"equals","value":"Yes"}],"type":"field"},{"action":{"field":"27","visibility":"Show"},"link":"Any","terms":[{"field":"31","operator":"equals","value":"Yes"}],"type":"field"},{"action":{"field":"51","visibility":"Show"},"link":"Any","terms":[{"field":"31","operator":"equals","value":"Yes"}],"type":"field"},{"action":{"field":"50","visibility":"Show"},"link":"Any","terms":[{"field":"31","operator":"equals","value":"Yes"}],"type":"field"},{"action":{"field":"39","visibility":"Show"},"link":"Any","terms":[{"field":"31","operator":"equals","value":"Yes"}],"type":"field"},{"action":{"field":"38","visibility":"Show"},"link":"Any","terms":[{"field":"31","operator":"equals","value":"Yes"}],"type":"field"}]);
+            JotForm.init(function(){
+              setTimeout(function() {
+                  $('input_23').hint('ex: myname@example.com');
+               }, 20);
+        if (window.JotForm && JotForm.accessible) $('input_22').setAttribute('tabindex',0);
+            /*INIT-END*/
+            });
+
+           JotForm.prepareCalculationsOnTheFly([null,null,{"name":"submitForm","qid":"2","text":"Place Order","type":"control_button"},null,null,{"name":"clickTo","qid":"5","text":"Place your Order here","type":"control_head"},null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"phoneNumber19","qid":"19","text":"Phone Number","type":"control_phone"},{"name":"fullName20","qid":"20","text":"Full Name","type":"control_fullname"},{"name":"deliveryAddress","qid":"21","text":"Delivery Address","type":"control_address"},{"name":"specialDelivery","qid":"22","text":"Special Delivery Instructions","type":"control_textarea"},{"name":"email23","qid":"23","text":"E-mail","type":"control_email"},{"name":"order","qid":"24","text":"Order","type":"control_fullname"},{"name":"pageBreak","qid":"25","text":"Page Break","type":"control_pagebreak"},{"name":"order26","qid":"26","text":"Order","type":"control_fullname"},null,null,null,{"name":"more","qid":"30","text":"More?","type":"control_checkbox"},null,null,null,{"name":"order34","qid":"34","text":"Order","type":"control_fullname"},{"name":"order35","qid":"35","text":"Order","type":"control_fullname"},{"name":"order36","qid":"36","text":"Order","type":"control_fullname"},{"name":"order37","qid":"37","text":"Order","type":"control_fullname"},null,null,null,null,null,null,null,null,{"name":"order46","qid":"46","text":"Order","type":"control_fullname"},{"name":"order47","qid":"47","text":"Order","type":"control_fullname"},{"name":"order48","qid":"48","text":"Order","type":"control_fullname"},{"name":"order49","qid":"49","text":"Order","type":"control_fullname"}]);
+           setTimeout(function() {
+        JotForm.paymentExtrasOnTheFly([null,null,{"name":"submitForm","qid":"2","text":"Place Order","type":"control_button"},null,null,{"name":"clickTo","qid":"5","text":"Place your Order here","type":"control_head"},null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"phoneNumber19","qid":"19","text":"Phone Number","type":"control_phone"},{"name":"fullName20","qid":"20","text":"Full Name","type":"control_fullname"},{"name":"deliveryAddress","qid":"21","text":"Delivery Address","type":"control_address"},{"name":"specialDelivery","qid":"22","text":"Special Delivery Instructions","type":"control_textarea"},{"name":"email23","qid":"23","text":"E-mail","type":"control_email"},{"name":"order","qid":"24","text":"Order","type":"control_fullname"},{"name":"pageBreak","qid":"25","text":"Page Break","type":"control_pagebreak"},{"name":"order26","qid":"26","text":"Order","type":"control_fullname"},null,null,null,{"name":"more","qid":"30","text":"More?","type":"control_checkbox"},null,null,null,{"name":"order34","qid":"34","text":"Order","type":"control_fullname"},{"name":"order35","qid":"35","text":"Order","type":"control_fullname"},{"name":"order36","qid":"36","text":"Order","type":"control_fullname"},{"name":"order37","qid":"37","text":"Order","type":"control_fullname"},null,null,null,null,null,null,null,null,{"name":"order46","qid":"46","text":"Order","type":"control_fullname"},{"name":"order47","qid":"47","text":"Order","type":"control_fullname"},{"name":"order48","qid":"48","text":"Order","type":"control_fullname"},{"name":"order49","qid":"49","text":"Order","type":"control_fullname"}]);}, 20);
+        </script>
+
+
+<!--data storage : session storage-->
+<script src="js/Order.js"></script>
+
+</head>
+
+<body>
+
+	<table style="width: 80%">
+		<tr>
+			<th><img src="resources/img/mainLogo.png" oncontextmenu="hi"
+				style="border-radius: 50%; width: 230px; height: 120px"></th>
+			<th colspan="2">
+				<p
+					style="font-family: Brush Script MT; font-size: 180%; color: tomato;">Gift
+					Card Shop</p>
+			</th>
+		</tr>
+	</table>
+
+	<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Chilu's Gift Store</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="index.html">Home</a></li>
+
+			<!-- 	<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Page 1-1</a></li>
+						<li><a href="#">Page 1-2</a></li>
+						<li><a href="#">Page 1-3</a></li>
+					</ul></li> -->
+
+			<li><a href="placeorder.html">Place Gift Card Order</a></li>
+			<li><a href="vieworder.html">View Gift Card Orders</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="contact.html"><span
+					class="glyphicon glyphicon-phone"></span> Contact Us</a></li>
+		</ul>
+	</div>
+	</nav>
+
+
+	<div class="sidenav">
+		<a href="index.html">Home</a> <a href="placeorder.html">Place Gift
+			Card Order</a> <a href="vieworder.html">View Gift Card Orders</a> <a
+			href="contact.html">Contact</a>
+	</div>
+<body onload="loadItems()">
+
+	<div class="main">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<!-- <th scope="col">#</th> -->
+					<th scope="col">Buyers Name</th>
+					<th scope="col">Shipping Address</th>
+					<th scope="col">City</th>
+					<th scope="col">Amount</th>
+					<th scope="col">Phone</th>
+				</tr>
+			</thead>
+			<tbody id=orderData></tbody>
+			<tr>
+				<td>buyer1</td>
+				<td>address1</td>
+				<td>city1</td>
+				<td>amount1</td>
+				<td>phone1</td>
+		</table>
+	</div>
+</body>
+
+
+</html>
